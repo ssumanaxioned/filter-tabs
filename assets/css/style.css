@@ -201,6 +201,10 @@ li {
   max-width: 1440px;
   width: 50%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
@@ -245,7 +249,7 @@ h2 {
 }
 
 .btn:hover { background-color: gray;}
-.active { background-color: green; }
+.btn.active { background-color: green; }
 
 .objects {
   margin-top: 1em;
@@ -258,8 +262,9 @@ h2 {
 }
 
 .box {
-  flex-basis: 30%;
+  min-width: 200px;
   padding: 4em 0;
+  display: none;
   background-color: lightgray;
   color: gray;
   text-align: center;
